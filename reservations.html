@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Page</title>
+    
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous"
+    >
+    <link href="https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css" media="all" rel="stylesheet">
+    
+</head>
+<body>
+    <main class="container">
+        <div class="jumbotron text-center">
+            <h1><i class="fas fa-pepper-hot"></i> Taco Tables!</h1>
+            <hr>
+            <h2>Reserve your taco table</h2>
+            <br>
+            <a class="btn btn-warning btn-lg" href="/tables" role="button"><i class="fas fa-th-list"></i> View Tables</a>
+            <a href="/"><button class="btn btn-lg btn-primary"><span class="fa fa-home"></span></button></a>
+
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">Taco Table Reservations</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="name" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="phoneNumber" class="form-control" id="phoneNumber">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="uniqueID">Email</label>
+                                <input type="uniqueID" class="form-control" id="uniqueID">
+                            </div>
+                            <button type="submit" id="submit" class="btn btn-info submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p><a href ="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
